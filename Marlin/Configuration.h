@@ -1,4 +1,4 @@
-git commit -m "Configure for my printer"/**
+/**
  * Marlin 3D Printer Firmware
  * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
@@ -71,7 +71,7 @@ git commit -m "Configure for my printer"/**
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(thisiskeithb, Tevo Tarantula Pro)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(TheArne4, Tevo Tarantula Pro)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -86,7 +86,7 @@ git commit -m "Configure for my printer"/**
  */
 
 // Show the Marlin bootscreen on startup. ** ENABLE FOR PRODUCTION **
-//#define SHOW_BOOTSCREEN
+#define SHOW_BOOTSCREEN
 
 // Show the bitmap in Marlin/_Bootscreen.h on startup.
 #define SHOW_CUSTOM_BOOTSCREEN
@@ -1326,7 +1326,7 @@ git commit -m "Configure for my printer"/**
 #endif
 
 // Add a menu item to move between bed corners for manual bed adjustment
-//#define LEVEL_BED_CORNERS
+#define LEVEL_BED_CORNERS
 
 #if ENABLED(LEVEL_BED_CORNERS)
   #define LEVEL_CORNERS_INSET_LFRB { 30, 30, 30, 30 } // (mm) Left, Front, Right, Back insets
